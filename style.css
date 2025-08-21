@@ -133,8 +133,8 @@
  }
  .register{
   position: absolute;
-  left: 15%;
-  bottom: 15%;
+  left: 10%;
+  bottom: 10%;
   padding-inline: clamp(15px,3vw,30px);
   padding-block: clamp(10px,2vw,15px);
   color: white;
@@ -142,12 +142,12 @@
   background-color: #ba264b;
   border: 0;
   border-radius: 20px;
-  font-size: clamp(10px,2vw,16px);
+  font-size: clamp(12px,2vw,16px);
  }
   .register-two{
   position: absolute;
-  right: 15%;
-  bottom: 15%;
+  right: 10%;
+  bottom: 10%;
   padding-inline: clamp(15px,3vw,30px);
   padding-block: clamp(10px,2vw,15px);
   color: white;
@@ -155,5 +155,56 @@
   background-color: #ba264b;
   border: 0;
   border-radius: 20px;
-  font-size: clamp(10px,2vw,16px);
+  font-size: clamp(12px,2vw,16px);
  }
+
+ /* Modal Background */
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  transform: scale(0.7);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 20px; right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Active State - Fade In + Zoom In */
+.modal.show {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal.show .modal-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Zoom Out on Close */
+.modal.hide .modal-content {
+  transform: scale(0.6);
+  opacity: 0;
+}

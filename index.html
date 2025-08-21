@@ -25,10 +25,42 @@
   <section class="image-div">
 
     <img src="img-web.png" alt="">
-    <button class="register">Register Now</button>
-    <button class="register-two">Register Now</button>
+    <button class="register" id="openBtn">Register Now</button>
+    <button class="register-two ">Register Now</button>
 
   </section>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+      <h2>Quiz Registration</h2>
+      <form>
+        <input type="text" placeholder="Enter Team name" required> <br>
+        <input type="text" placeholder="Enter first participant " required> <br>
+        <input type="text" placeholder="Enter second participant" required> <br>
+        <input type="number" placeholder="Enter Contact number(1)" required> <br>
+        <input type="email" placeholder="Your Email" required> <br>
+        <button type="submit" id="closeBtn">Submit</button>
+      </form>
+    </div>
+  </div>
+  <script>
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const modal = document.getElementById('modal');
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('show');
+      modal.classList.remove('hide');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.add('hide');
+      setTimeout(() => {
+        modal.classList.remove('show');
+      }, 300); // same as CSS transition time
+    });
+
+  </script>
 </body>
 
 </html>
