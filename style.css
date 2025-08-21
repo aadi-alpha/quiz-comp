@@ -175,14 +175,17 @@
 
 /* Modal Box */
 .modal-content {
-  background: #fff;
+  background: #000000;
   padding: 30px;
   border-radius: 12px;
-  width: 350px;
+  max-width: 500px;
+  width: 100%;
+  margin-inline: 6vw;
   text-align: center;
   transform: scale(0.7);
   transition: transform 0.3s ease, opacity 0.3s ease;
   opacity: 0;
+
 }
 
 /* Close Button */
@@ -207,4 +210,20 @@
 .modal.hide .modal-content {
   transform: scale(0.6);
   opacity: 0;
+}
+input{
+  width: 100%;
+  margin: 5px;
+  height: 30px;
+  padding: 10px;
+  background: linear-gradient(to right, #ba264b1e,#ba264b00);
+  border: 1px solid #ba264b;
+}
+#submit{
+  background: black;
+  border: 1px solid #ba264b;
+  padding-inline: clamp(20px,3vw,20px);
+  padding-block: clamp(5px,2vw,10px);
+  color: white;
+  margin-top: 15px;
 }
