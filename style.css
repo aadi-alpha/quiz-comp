@@ -34,13 +34,13 @@
  }
 
  .challenge-title {
-   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    font-size: 24px;
    font-weight: 600;
    color: #ba264b;
    /* Netflix pink */
- 
-  text-align: center;
+
+   text-align: center;
 
    margin: 0;
    margin-top: 5px;
@@ -52,46 +52,87 @@
  }
 
  .arenaTxt {
-    display: inline-block;
-   font-size: clamp(25px, 5vw, 40px);
+   display: inline-block;
+   font-size: clamp(25px, 5vw, 45px);
    font-family: 'GameOfSquids', sans-serif;
- 
+
  }
 
-.mind-chall {
-color: white;
+ .mind-chall {
+   color: white;
 
    font-size: clamp(23px, 5vw, 35px);
-}
-.para-tag{
+ }
+
+ .para-tag {
    font-family: 'Roboto', sans-serif;
-  font-size: clamp(16px,2vw,18px);
-  
-}
-.para-tag{
-   font-size: clamp(14px,2vw,22px);
-      font-weight: 500;
-      color: #ccc;
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-}
-.para-tag-two{
-     font-size: clamp(13px,2vw,18px);
-      font-weight: 500;
-      color: #ccc;
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 2px;
-      margin-top: 10px;
-}
-.para-tag-three{
- font-size: clamp(13px,2vw,18px);
-      font-weight: 500;
-      color: #ccc;
-      font-family: 'Roboto', sans-serif;
-      letter-spacing: 2px;
-      margin-top: 5px; 
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
-}
+   font-size: clamp(16px, 2vw, 18px);
+
+ }
+
+ .para-tag {
+   font-size: clamp(14px, 2vw, 22px);
+   font-weight: 500;
+   color: #ccc;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+ }
+
+ .para-tag-two {
+   font-size: clamp(13px, 2vw, 18px);
+   font-weight: 500;
+   color: #ccc;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 2px;
+   margin-top: 15px;
+ }
+
+ .para-tag-three {
+   font-size: clamp(13px, 2vw, 18px);
+   font-weight: 500;
+   color: #ccc;
+   font-family: 'Roboto', sans-serif;
+   letter-spacing: 2px;
+   margin-top: 5px;
+   max-width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+
+ }
+
+ .image-div {
+   max-width: 88vw;
+   width: 100%;
+   height: clamp(300px, 50vw, 700px);
+   overflow: hidden;
+   position: relative;
+   margin-top: clamp(40px, 5vw, 80px);
+ }
+
+ .image-div img {
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+     object-fit: cover;
+ }
+
+ .image-div::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(to top, #0000008d 10%,#00000000 );
+   top: 0;
+   left: 0;
+     inset: 0;
+   z-index: 2;
+ 
+ }
+ .register{
+  position: absolute;
+  left: 20%;
+  bottom: 15%;
+ }
