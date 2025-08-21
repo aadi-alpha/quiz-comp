@@ -1,0 +1,33 @@
+  body {
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 50px;
+    }
+
+    /* Custom Squid Game font (downloaded TTF/OTF file) */
+    @font-face {
+      font-family: 'GameOfSquids';
+      src: url('fonts/Game Of Squids.ttf') format('truetype'); /* Make sure the path is correct */
+    }
+
+    .squid-title {
+      font-family: 'GameOfSquids', sans-serif;
+      font-size: 70px;
+      color: #fff;
+      letter-spacing: 5px;
+        text-shadow: 0 0 2px #ff2e7e, 
+               0 0 4px #ff2e7e, 
+               0 0 10px #ff2e7e;
+    }
+
+    .challenge-title {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif sans-serif;
+      font-size: 40px;
+      font-weight: 600;
+      color: #e02856; /* Netflix pink */
+      margin-top: -50px;
+    }
+    .pink-squid{
+     color: #e02856;
+    }
