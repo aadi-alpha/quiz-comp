@@ -8,7 +8,7 @@
    background: black;
    color: white;
    text-align: center;
-   padding: 0px;
+   padding-inline: 6vw;
  }
 
  /* Custom Squid Game font (downloaded TTF/OTF file) */
@@ -21,13 +21,13 @@
  .squid-title {
 
    font-family: 'GameOfSquids', sans-serif;
-   font-size: clamp(40px, 5vw, 50px);
+   font-size: clamp(30px, 5vw, 50px);
    color: #fff;
    letter-spacing: 5px;
    text-align: center;
    text-shadow: 0 0 2px #ff2e7e,
      0 0 4px #ff2e7e,
-     0 0 10px #ff2e7e;
+     0 0 6px #ff2e7e;
    margin: 0;
    line-height: clamp(40px, 5vw, 50px);
    margin-top: 60px;
@@ -43,6 +43,7 @@
   text-align: center;
 
    margin: 0;
+   margin-top: 5px;
  }
 
  .pink-squid {
@@ -52,7 +53,7 @@
 
  .arenaTxt {
     display: inline-block;
-   font-size: clamp(24px, 5vw, 50px);
+   font-size: clamp(25px, 5vw, 40px);
    font-family: 'GameOfSquids', sans-serif;
  
  }
@@ -60,6 +61,34 @@
 .mind-chall {
 color: white;
 
-   font-size: clamp(20px, 5vw, 45px);
+   font-size: clamp(23px, 5vw, 35px);
 }
-
+.para-tag{
+   font-family: 'Roboto', sans-serif;
+  font-size: clamp(16px,2vw,18px);
+  
+}
+.para-tag{
+   font-size: clamp(14px,2vw,22px);
+      font-weight: 500;
+      color: #ccc;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+}
+.para-tag-two{
+     font-size: clamp(13px,2vw,18px);
+      font-weight: 500;
+      color: #ccc;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 2px;
+      margin-top: 10px;
+}
+.para-tag-three{
+ font-size: clamp(13px,2vw,18px);
+      font-weight: 500;
+      color: #ccc;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 2px;
+      margin-top: 5px; 
+}
