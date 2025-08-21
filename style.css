@@ -1,8 +1,13 @@
-  body {
+ *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+ } 
+ body {
       background: black;
       color: white;
       text-align: center;
-      padding: 50px;
+      padding: 0px;
     }
 
     /* Custom Squid Game font (downloaded TTF/OTF file) */
@@ -17,19 +22,21 @@
       font-size: clamp(40px,5vw,70px);
       color: #fff;
       letter-spacing: 5px;
+      text-align: center;
         text-shadow: 0 0 2px #ff2e7e, 
                0 0 4px #ff2e7e, 
                0 0 10px #ff2e7e;
                margin: 0;
                line-height: clamp(40px,5vw,70px);
-               margin-top: 30px;
+               margin-top: 60px;
     }
 
     .challenge-title {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif sans-serif;
-      font-size: 30px;
+      font-size: 24px;
       font-weight: 600;
       color: #ba264b; /* Netflix pink */
+          text-align: center;
 
 margin: 0;
     }
@@ -37,7 +44,7 @@ margin: 0;
      color: #e02856;
     }
     .arenaTxt{
-      font-size: clamp(30px,5vw,70px);
+      font-size: clamp(24px,5vw,70px);
         font-family: 'GameOfSquids', sans-serif;
     }
     .mind-chall{
