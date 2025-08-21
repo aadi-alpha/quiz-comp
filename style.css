@@ -12,22 +12,34 @@
     }
 
     .squid-title {
+      
       font-family: 'GameOfSquids', sans-serif;
-      font-size: 70px;
+      font-size: clamp(40px,5vw,70px);
       color: #fff;
       letter-spacing: 5px;
         text-shadow: 0 0 2px #ff2e7e, 
                0 0 4px #ff2e7e, 
                0 0 10px #ff2e7e;
+               margin: 0;
+               line-height: clamp(40px,5vw,70px);
+               margin-top: 30px;
     }
 
     .challenge-title {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif sans-serif;
-      font-size: 40px;
+      font-size: 30px;
       font-weight: 600;
-      color: #e02856; /* Netflix pink */
-      margin-top: -50px;
+      color: #ba264b; /* Netflix pink */
+
+margin: 0;
     }
     .pink-squid{
      color: #e02856;
+    }
+    .arenaTxt{
+      font-size: clamp(40px,5vw,70px);
+        font-family: 'GameOfSquids', sans-serif;
+    }
+    .mind-chall{
+    
     }
