@@ -37,7 +37,7 @@ margin: 0;
      color: #e02856;
     }
     .arenaTxt{
-      font-size: clamp(40px,5vw,70px);
+      font-size: clamp(30px,5vw,70px);
         font-family: 'GameOfSquids', sans-serif;
     }
     .mind-chall{
