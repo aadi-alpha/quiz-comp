@@ -107,6 +107,9 @@
    height: clamp(300px, 50vw, 700px);
    overflow: hidden;
    position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    margin-top: clamp(40px, 5vw, 80px);
  }
 
@@ -133,30 +136,20 @@
  }
  .register{
   position: absolute;
-  left: 10%;
+
+ 
   bottom: 10%;
   padding-inline: clamp(15px,3vw,30px);
   padding-block: clamp(10px,2vw,15px);
   color: white;
   z-index: 5;
   background-color: #ba264b;
+
   border: 0;
   border-radius: 20px;
   font-size: clamp(12px,2vw,16px);
  }
-  .register-two{
-  position: absolute;
-  right: 10%;
-  bottom: 10%;
-  padding-inline: clamp(15px,3vw,30px);
-  padding-block: clamp(10px,2vw,15px);
-  color: white;
-  z-index: 5;
-  background-color: #ba264b;
-  border: 0;
-  border-radius: 20px;
-  font-size: clamp(12px,2vw,16px);
- }
+
 
  /* Modal Background */
 .modal {
