@@ -278,29 +278,33 @@
  }
 
  .footer {
-  background: #111; /* dark royal */
+
   color: #d0cfcf;
   text-align: left;
   padding: 20px;
+  padding-inline:35px;
   display: flex;
-  justify-content: space-between;
+  text-align: center;
+ justify-content: space-between;
+  flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
   margin-top: 40px;
   border-top: 2px solid #ba264b; /* same pink-red theme */
 }
 
 .footer h3 {
-  font-size: clamp(20px,2vw,24px);
+  font-size: clamp(18px,2vw,24px);
   margin-bottom: 10px;
   color: #ba264b; /* highlight heading */
   letter-spacing: 1px;
 }
 
 .footer p {
-  margin: 5px 0;
+  margin: 10px 0;
   font-size: clamp(14px,2vw,16px);
    font-family: 'Roboto', sans-serif;
-   margin-left: 10px;
+ text-align: left;
+
   
 }
 
@@ -313,6 +317,24 @@
 .footer a:hover {
   text-decoration: underline;
 }
-.left-footer{
 
-}
+
+    footer .about {
+
+      font-size: 14px;
+     
+      color: #bbb;
+      max-width: 500px;
+      margin-left: auto;
+     
+     
+    }
+    .footer .about p{
+margin: 0;
+    }
+
+     .credit {
+      margin-top:20px ;
+      font-size: 13px;
+      color: #888;
+    }
