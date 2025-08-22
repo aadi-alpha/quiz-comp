@@ -206,11 +206,16 @@
 }
 input{
   width: 100%;
-  margin: 5px;
-  height: 30px;
+  margin: 10px;
+  height: 40px;
   padding: 10px;
-  background: linear-gradient(to right, #ba264b1e,#ba264b00);
+  background: linear-gradient(to top, #ba264b1e ,#ba264b00);
   border: 1px solid #ba264b;
+  border-radius: 5px;
+  color: white;
+}
+input::placeholder{
+  color: rgba(255, 255, 255, 0.771);
 }
 #submit{
   background: black;

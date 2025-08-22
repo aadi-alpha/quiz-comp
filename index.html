@@ -26,19 +26,20 @@
 
     <img src="img-web.png" alt="">
     <button class="register" id="openBtn">Register Now</button>
-  
+
 
   </section>
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close" id="closeBtn">&times;</span>
       <h2 style="margin-bottom: 20px; color: #ba264b;">Quiz Registration</h2>
-      <form>
-        <input type="text" placeholder="Enter Team name" required> <br>
-        <input type="text" placeholder="Enter first participant " required> <br>
-        <input type="text" placeholder="Enter second participant" required> <br>
-        <input type="number" placeholder="Enter Contact number(1)" required> <br>
-        <input type="email" placeholder="Email" required> <br>
+      <form id="quizForm">
+        <input type="text" name="teamName" placeholder="Enter Team name" required> <br>
+        <input type="text" name="participant1" placeholder="Enter First Participant" required> <br>
+        <input type="text" name="participant2" placeholder="Enter Second Participant" required> <br>
+        <input type="number" name="contact" placeholder="Enter Contact Number" required> <br>
+        <input type="number" name="whatsapp" placeholder="Enter Whatsapp Number" required> <br>
+        <input type="email" name="email" placeholder="Email" required> <br>
         <button type="submit" id="submit">Submit</button>
       </form>
     </div>
@@ -61,6 +62,7 @@
     });
 
   </script>
+  <script src="form.js"></script>
 </body>
 
 </html>
