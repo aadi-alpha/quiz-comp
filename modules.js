@@ -1,3 +1,17 @@
+let welc = document.getElementById('welcomeGreet')
+let cont = document.getElementById('greetContent')
+let cls = document.getElementById('closeGreet')
+ document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(() => {
+    welc.classList.add('show')
+    welc.classList.remove('hide')
+  }, 1000)
+})
+cls.addEventListener('click', () => {
+  welc.classList.add('hide')
+  setTimeout(() => { welc.classList.remove('show') }, 300)
+
+})
 const form = document.getElementById('quizForm');
 const loader = document.getElementById('loader');
 
@@ -48,17 +62,4 @@ closeBtn.addEventListener('click', () => {
     modal.classList.remove('show');
   }, 300); // same as CSS transition time
 });
-let welc = document.getElementById('welcomeGreet')
-let cont = document.getElementById('greetContent')
-let cls = document.getElementById('closeGreet')
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    welc.classList.add('show')
-    welc.classList.remove('hide')
-  }, 1000)
-})
-cls.addEventListener('click', () => {
-  welc.classList.add('hide')
-  setTimeout(() => { welc.classList.remove('show') }, 300)
 
-})
