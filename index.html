@@ -7,6 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200,400,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200,400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&amp;display=swap" rel="stylesheet">
 
 
   <link rel="stylesheet" href="style.css">
@@ -29,9 +30,9 @@
 
 
   </section>
- <div id="loader">
-  <div class="spinner"></div>
-</div>
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
   <div class="modal" id="modal">
     <div class="modal-content">
       <span class="close" id="closeBtn">&times;</span>
@@ -40,48 +41,54 @@
         <input type="text" name="teamName" placeholder="Enter Team name" required> <br>
         <input type="text" name="participant1" placeholder="Enter First Participant" required> <br>
         <input type="text" name="participant2" placeholder="Enter Second Participant" required> <br>
-        <input type="number" name="contact" placeholder="Enter Contact Number" required> <br>
-        <input type="number" name="whatsapp" placeholder="Enter Whatsapp Number" required> <br>
+        <input type="number" name="contact" placeholder="Enter Contact Number Of Member One" required> <br>
+        <input type="number" name="whatsapp" placeholder="Enter Contact Number Of Member Two" required> <br>
         <input type="email" name="email" placeholder="Email" required> <br>
         <button type="submit" id="submit">Submit</button>
       </form>
     </div>
   </div>
   <script>
-    const openBtn = document.getElementById('openBtn');
-    const closeBtn = document.getElementById('closeBtn');
-    const modal = document.getElementById('modal');
-
-    openBtn.addEventListener('click', () => {
-      modal.classList.add('show');
-      modal.classList.remove('hide');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      modal.classList.add('hide');
-      setTimeout(() => {
-        modal.classList.remove('show');
-      }, 300); // same as CSS transition time
-    });
+ 
 
   </script>
   <footer class="footer">
     <div class="left-footer">
-  <h3>For Queries Contact:</h3>
-  <p> <b>Manish Giri:</b>  <a href="tel:+919354912492">+91 9354912492</a></p>
-  <p> <b>Aadi Nagpal:</b> <a href="tel:+918572079746">+91 8572079746</a></p>
-  </div>
-      <div class="about">
-      <p>Geeks’ Kultra is a vibrant club initiative aimed at nurturing logical skills, creativity, and teamwork among students. It is proudly organized and managed by the Computer Aided Department of Seth Jai Parkash Polytechnic, Damla.</p>
+      <h3>For Queries Contact:</h3>
+      <p> <b>Manish Giri:</b> <a href="tel:+919354912492">+91 9354912492</a></p>
+      <p> <b>Aadi Nagpal:</b> <a href="tel:+918572079746">+91 8572079746</a></p>
     </div>
+    <div class="about">
+      <p>Geeks’ Kultra is a vibrant club initiative aimed at nurturing logical skills, creativity, and teamwork among
+        students. It is proudly organized and managed by the Computer Aided Department of Seth Jai Parkash Polytechnic,
+        Damla.</p>
+    </div>
+    
 
-  
-</footer>
+  </footer>
+  <section class="welcomeGreet" id="welcomeGreet">
+      <div class="greetContent" id="greetContent">
+        <span class="closeGreet" id="closeGreet">&times;</span>
+        <h1 class="squid-title-greet">G<span class="pink-squid">e</span><span class="pink-squid">e</span>ks Kultra</h1>
+        <h2 class="title-quiz"> <span style="color: #ba264b;">SQUID</span> QUIZ COMPETITION</h2>
+        <h2 class="mark-greet">Mark Your Calendar</h2>
+        <div class="main-greet">
+          <img src="Pink Illustrative Year End Sale Calendar Your Story.png" alt="calendar">
+          <div class="venue-greet">
+            <p class="text-ven-greet"><b style="color: #df2f5b;">Date: </b>12 September,2025</p>
+            <p class="text-ven-greet"><b style="color: #df2f5b;">Venue: </b>C3 Lab</p>
+            <p class="text-ven-greet"><b style="color: #df2f5b;">Timing: </b>2:30 PM</p>
+          </div>
+        </div>
+        <h3 class="greet-tagline">Mark the date, <br> Make your impact</h3>
+      </div>
+    </section>
   <div class="credit">
-      © 2025 Geeks’ Kultra | All Rights Reserved <br> <br>
-      <span style="color: rgba(255, 255, 255, 0.159);">Code by Aadi</span>
-    </div>
-  <script src="form.js"></script>
+    © 2025 Geeks’ Kultra | All Rights Reserved <br> <br>
+    <p style=" font-family: 'Fredericka the Great', serif; font-weight: 400;
+  font-style: normal; margin-bottom: 10px;">Developed by Aadi</p>
+  </div>
+  <script src="modules.js"></script>
 </body>
 
 </html>

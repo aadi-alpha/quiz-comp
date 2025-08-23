@@ -15,6 +15,7 @@
    color: white;
    text-align: center;
    padding-inline: 6vw;
+
  }
 
  /* Custom Squid Game font (downloaded TTF/OTF file) */
@@ -49,7 +50,7 @@
    text-align: center;
 
    margin: 0;
-   margin-top: 5px;
+
  }
 
  .pink-squid {
@@ -116,7 +117,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: clamp(40px, 5vw, 80px);
+   margin-top: clamp(50px, 4vw, 80px);
  }
 
  .image-div img {
@@ -229,6 +230,7 @@
 
  input::placeholder {
    color: rgba(255, 255, 255, 0.771);
+   font-size: clamp(11px, 2vw, 14px);
  }
 
  #submit {
@@ -281,7 +283,7 @@
 
    color: #d0cfcf;
    text-align: left;
-   padding: 20px;
+   padding-block: 30px;
    padding-inline: 35px;
    display: flex;
    text-align: center;
@@ -289,7 +291,7 @@
    flex-wrap: wrap;
    gap: 10px;
    font-family: 'Poppins', sans-serif;
-   margin-top: 40px;
+   margin-top: clamp(50px, 4vw, 80px);
    border-top: 2px solid #ba264b;
    /* same pink-red theme */
  }
@@ -336,10 +338,144 @@
 
  .footer .about p {
    margin: 0;
+   line-height: clamp(20px, 2vw, 24px);
+   font-size: clamp(14px, 2vw, 16px);
  }
 
  .credit {
    margin-top: 20px;
    font-size: 13px;
    color: #888;
+ }
+
+
+ .welcomeGreet {
+   position: fixed;
+
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 9999;
+   background: rgba(0, 0, 0, 0.6);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   pointer-events: none;
+   transition: opacity 0.3s ease;
+   z-index: 1000;
+      transform: scale(01);
+   transition: transform 0.3s ease, opacity 0.3s ease;
+   opacity: 0;
+ }
+
+ .greetContent {
+   width: 500px;
+   /* height: 500px; */
+   background: url("ChatGPT\ Image\ Aug\ 23\,\ 2025\,\ 11_30_33\ AM.png") no-repeat 100% 100%;
+   position: relative;
+   border: 1px solid #ba264b;
+   border-radius: 10px;
+   padding-inline: 20px;
+   text-align: center;
+   margin-left: 6vw;
+   margin-right:6vw ;
+   padding-bottom: 20px;
+      transform: scale(0.7);
+   transition: transform 0.3s ease, opacity 0.3s ease;
+   opacity: 0;
+ }
+
+ .closeGreet {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   font-size: 30px;
+   left: auto;
+   right: 0%;
+   top: 0%;
+ }
+
+ .squid-title-greet {
+   font-family: 'GameOfSquids', sans-serif;
+   font-size: clamp(20px, 5vw, 30px);
+   color: #fff;
+   letter-spacing: 3px;
+   text-align: center;
+    text-shadow: 0 0 2px #ff2e7e,
+     0 0 3cap #ff2e7e,
+     0 0 4px #ff2e7e; 
+   margin: 0;
+   line-height: clamp(30px, 5vw, 40px);
+   margin-top: 20px;
+ }
+ .title-quiz{
+  margin-top: 10px;
+  color: white;
+ }
+
+ .mark-greet {
+margin-top: 10px;
+font-family: 'poppins',sans-serif;
+font-size: clamp(18px,2vw,24px);
+letter-spacing: 2px;
+color: #a2a1a1;
+ }
+ .main-greet{
+  display: flex;
+  gap: 10px;
+  height: 130px ;
+  width: 88%;
+  justify-content: space-evenly;
+
+  margin-top: clamp(20px,2vw,40px);
+ }
+ .main-greet img{
+  height: 130px;
+  max-width: 130px;
+  width: 100%;
+margin-left: clamp(10px,3vw,40px);
+
+ }
+ .venue-greet{
+  height: 130px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: left;
+font-size: clamp(16px,2vw,18px);
+gap: 10px;
+
+ }
+ .greet-tagline{
+  text-align: center;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: clamp(18px,2vw,24px);
+  margin-top: 15px;
+border: 1px solid #ba264b;
+padding-block: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  border-radius: 10px;
+ 
+ }
+  .welcomeGreet.show {
+   opacity: 1;
+   pointer-events: all;
+ }
+
+ .welcomeGreet.show .greetContent {
+   transform: scale(1);
+   opacity: 1;
+ }
+
+ /* Zoom Out on Close */
+ .welcomeGreet.hide .greetContent {
+   transform: scale(0.6);
+   opacity: 0;
  }
