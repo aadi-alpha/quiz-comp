@@ -440,15 +440,34 @@ color: #a2a1a1;
 margin-left: clamp(10px,3vw,40px);
 
  }
+
  .venue-greet{
-  height: 130px;
+ 
 display: flex;
 flex-direction: column;
 justify-content: center;
 text-align: left;
-font-size: clamp(16px,2vw,18px);
+font-size: clamp(15px,2vw,18px);
 gap: 10px;
 
+ }
+  @media(max-width:459px){
+  .main-greet{
+    height: 120px;
+  }
+  .main-greet img{
+    width: 100px;
+    height: 120px;
+  }
+ }
+   @media(max-width:371px){
+  .main-greet{
+    height: 120px;
+  }
+  .main-greet img{
+    width: 70px;
+    height: 120px;
+  }
  }
  .greet-tagline{
   text-align: center;
