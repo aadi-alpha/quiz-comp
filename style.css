@@ -344,9 +344,17 @@
    font-size: clamp(14px, 2vw, 16px);
  }
  @media(max-width:913px){
-  
+  .footer{
+  justify-content: center;
+
+  }
   .footer .about{
     margin-left: 0;
+   display: flex;
+
+  }
+  .footer .about p{
+    text-align: center;
   }
  }
 

@@ -1,7 +1,7 @@
 let welc = document.getElementById('welcomeGreet')
 let cont = document.getElementById('greetContent')
 let cls = document.getElementById('closeGreet')
- document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     welc.classList.add('show')
     welc.classList.remove('hide')
@@ -27,7 +27,8 @@ form.addEventListener('submit', async (e) => {
     formData.append("entry.896551596", form.participant2.value);
     formData.append("entry.876371631", form.contact.value);
     formData.append("entry.34988263", form.whatsapp.value);
-    formData.append("entry.916247435", form.email.value);
+    formData.append("entry.916247435", form.emailone.value);
+    formData.append("entry.1371087664", form.emailtwo.value);
 
     let response = await fetch(
       "https://docs.google.com/forms/d/e/1FAIpQLSfopFhAehGbr0VB5tiSHdud2dZlKJyoaAaZJAyp_Rw_a5mNGQ/formResponse",
